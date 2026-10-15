@@ -5,8 +5,8 @@
 #for RDIR in rho_Dp_phase_RESULT{0..0}; do
 for i in {0.0002,0.0005,0.001,0.002,0.005,0.01,0.02}; do
 #for i in 0.26; do
-	RDIR=rho\=0.65_eps\=${i}_structure_RESULT
-	#RDIR=rho\=0.65_eps\=${i}_Dp_phase_RESULT
+	#RDIR=rho\=0.65_eps\=${i}_structure_RESULT
+	RDIR=rho\=0.65_eps\=${i}_Dp_phase_RESULT
 	FILES=${RDIR}/soln_density*_on_proc0.dat
 	RDIR_OUT=COMBINED_${RDIR}
 	RDIR_OUT_BIF=${RDIR_OUT}_bif
